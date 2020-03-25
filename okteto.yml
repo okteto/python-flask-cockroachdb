@@ -1,0 +1,5 @@
+name: flask-cockroach
+image: okteto/flask-cockroachdb
+command:
+- bash
+workdir: /usr/src/app

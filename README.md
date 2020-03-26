@@ -11,23 +11,23 @@ This is a sample of how to develop a Flask App that uses CockroachDB as the DB.
 
 1. Run the `okteto login` in your local terminal to connect to your Okteto Cloud account.
 
-      $ okteto login
+        $ okteto login
 
 1. Run the `okteto namespace` command to download your credentials and activate your Okteto Cloud namespace.
 
-      $ okteto namespace
+        $ okteto namespace
 
 1. Run `okteto up` to start your development environment in Okteto Cloud. Your development environment will be pre-configured with everything you need to develop your `flask` application.
 
-      $ okteto up
+        $ okteto up
 
 
-1. Before starting our service, we need to create the database. Your development environment is already configured to access your 
+1. Before starting our service, we need to create the database. Your development environment is already configured with the cockroachDB client and access to the cluster, so all you have to run is:
 
-      okteto> cockroach sql -e 'CREATE DATABASE todo' --insecure
+        okteto> cockroach sql -e 'CREATE DATABASE todo' --insecure
 
 1. Start your service directly in your development environment
 
-      okteto> python app.py
+        okteto> python app.py
 
 1. When you started your development environment, Okteto Cloud automatically created an HTTPS endpoint to it. Go to Okteto Cloud, find the service and click on the URL to access your application. Add and remove a few items from the todo list to try it out. 

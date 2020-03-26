@@ -1,5 +1,5 @@
-name: flask-cockroach
-image: okteto/flask-cockroachdb
+name: todo
+image: okteto/python-flask-cockroachdb
 command:
 - bash
 workdir: /usr/src/app

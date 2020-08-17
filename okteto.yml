@@ -3,3 +3,5 @@ image: okteto/python-flask-cockroachdb
 command:
 - bash
 workdir: /usr/src/app
+persistentVolume:
+  enabled: false

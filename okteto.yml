@@ -1,4 +1,5 @@
 name: todo
+autocreate: true
 image: okteto/python-flask-cockroachdb
 command:
 - bash
